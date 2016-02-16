@@ -14,3 +14,82 @@
 .columns {
   min-height: 100px !important;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 98%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+header {
+  width:100%;
+  height: 70px;
+  margin: 0 auto;
+}
+
+h2 {
+  padding-left: 5%;
+  margin-top: 0;
+  float: left;
+  width: 60%;
+}
+
+header a {
+  float: right;
+  display: inline;
+  width: 15%;
+}
+
+
+#gallery {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#gallery img {
+  height: auto;
+  vertical-align: middle;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+@media only screen and (min-width: 700px) {
+  #gallery img {
+    float: right;
+    width: 46%;
+    height: auto;
+    margin: 2%;
+  }
+
+  #gallery {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  #gallery img {
+    float: left;
+    width: 28%;
+    /*margin: 1%;*/
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  header h2 {
+    padding-left: 3em;
+  }
+
+  #gallery {
+    padding-left: 3.5em;
+  }
+
+}
